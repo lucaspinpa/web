@@ -1,0 +1,44 @@
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+
+body{
+	font-family: "PT Sans", Calibri, Tahoma, sans-serif}
+
+
+#navbar { overflow: auto; 
+	padding-top: 20px;
+	padding-bottom: 20px;}
+
+#navbar ul {
+	list-style: none; 
+	float: left;
+	padding-left: 2px }
+
+#navbar ul li {
+	float: left;
+	padding-left: 5px;	
+	padding-right: 10px;
+}
+
+	
+.cita {font-family: 'PT Sans', serif;
+		font-style: italic; 
+		font-size: 1.1rem ;
+		padding-left: 10px}
+
+
+
+.intro {font-family: 'PT Sans', sans-serif;
+			font-size: 1.2rem}
+			
+.texto{ font-size: 1.3rem;
+			text-align: center;}
+			
+mark {background-color: #FFFFFF;}
+
+#descargar {text-align: center;
+font-size: 1.6rem}
+
+.orla {text-align: center;
+padding-top: 100px;
+text-size: 1.3rem}
