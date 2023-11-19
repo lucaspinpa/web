@@ -1,0 +1,37 @@
+#projects,
+#about,
+#contact {
+	padding: 50px 0;
+}
+
+/* About */
+#about p,
+#about h3 {
+	text-align: center;
+}
+#showcase {
+ 	background-image: url("img1.jpg");
+ 	background: ;background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*Scales the image (while preserving its ratio) to the smallest possible size to fill the container*/
+	height: 100px; /*cambiamos a altura a 100 para que sexa máis pequena*/
+	text-align: center;
+	padding: 100px;
+
+}
+
+.about-row {
+	flex-wrap: wrap;/* permite colocar os 2 elementos de about me en dúas liñas*/
+}
+
+.about-row-experience,
+.about-row-me {
+	width: 100%;
+	padding-left: 0;
+}
+
+/* Contact */
+#contact p {
+	font-size: 12px;
+}
+
