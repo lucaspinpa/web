@@ -1,0 +1,225 @@
+/*importamos o tipo de letra "bangers" de google fonts. Buscar titorial de como importanr fontes de Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/*Hacemos un reset a todos os espazos que deixa o navegador por defecto* */
+
+{*
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Estilos principais */
+
+body {background-color: #b8d4b8}
+h2 {
+	font-size: 2rem; /*(tamaño 16 pixeles) por 1.8, onde rem=16 pix*/
+	text-align: center;
+	text-transform: uppercase; /*transforma todas as letras de h2 en maísculas*/
+	font-weight: 500; /*ancho da letra*/
+	padding-bottom: 50px; /*deixa un espacio por debaixo de 50px*/
+	font-family: 'Abril Fatface', serif; /*tipo de letra que importamos de google fonts*/
+	color: #2E5848;
+}
+
+h3 {
+	font-size: 1.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-weight: 400;
+	font-family: 'Abril Fatface';
+	color: #2E5848;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0; /*marxe superior e inferior de 10px e marxe esquerda e dereita de 0 puntos*/
+	line-height: 1.7em; /*salto de línea*/
+}
+
+a {
+	text-decoration: none;
+} /* enlaces sen a liña que ten por defecto, e decir lle quito a liña*/
+
+/* Utility Classes */
+
+.container {
+	margin: 0; /* 0px de marxen vertical, centrado horizontalmente */
+	max-width: 1300px; /*coloca o ancho de 1300px como valor máximo do container*/
+	overflow: auto;
+	padding: 0; /*crea un espacio en los bordes*/
+}
+
+.large {
+	font-size: 20px;
+}
+
+.texto-contacto{
+	font-size: 16px;
+}
+
+.medium{
+	font-size: 19px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 15px 40px; /*me permite separar el texto da liña do botón: 15px arriba/abaixo e 40px esquerda, dereita*/
+	letter-spacing: 1px; /*separación entre letras*/
+	font-family: 'Bangers';
+}
+.btn-outline {
+	background: transparent;
+	border: 2px solid #fff; /*color blanco*/
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300; }
+
+.btn-outline:hover { /*cando pase o ratón por encima que me cambie os cores de fondo e das letras*/
+	background: #AFC9A4; /*cor branco en Hex*/
+	color: black;/*cor negro en Hex*/
+}
+
+/* Navbar */
+#navbar {
+	overflow: auto; / *define o que fai se o tamaño e moi grande*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navbar a {
+	color: #000; /*cor do enlace de cor negro*/
+}
+
+#navbar .logo {
+	float: left; /*posiciona a esquerda do contenedor*/
+	padding-top: 12px;
+}
+
+#navbar img {
+	height: 80px;
+}
+
+#navbar ul {
+	list-style: none; /*lle quitamos os puntos a lista non ordeada*/
+	float: right; /*mandamos o menú a dereita do contenedor*/
+
+}
+
+#navbar ul li {
+	float: left; /*en vez de listarse os list items, (li) en vertical, se teñen que poñer xuntos na mesma liña*/ 
+}
+
+#navbar ul li a { 
+	display: block;
+	padding: 20px;
+	text-align: center;
+	font-size: 26px;
+	font-family: 'Abril Fatface';
+	color: #2E5848;
+
+}
+
+
+#showcase {
+ 	background-image: url("img1.jpg");
+ 	background: ;background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*Scales the image (while preserving its ratio) to the smallest possible size to fill the container*/
+	height: 450px; /*altura da foto principal*/
+	text-align: center;
+	padding: 100px;
+
+}
+#showcase .btn {
+	margin-top: 180px;   /*distancia dende enriba para poñer o botón de proxectos na foto principal*/
+}
+
+/* Projects */
+#projects {
+	padding: 80px ;
+}
+
+.projects-row {
+	display: flex;
+
+	/*crea un display axustando as fotos nunha liña, se non o utilizo se ven en filas*/
+}
+
+.projects-row img {
+	width: 100%; /*axusta ao 100% a imaxe*/
+}
+
+/* About */
+#about {
+	padding: 80px 0;
+	background: #89a389;
+	font-family: 'Roboto Mono';
+	color: #d5ebd5
+}
+
+.about-row {
+	display: flex;
+}
+
+.about-row-experience,
+.about-row-me {
+	width: 50%;/*a mitad da pantalla*/
+	padding-left: 50px;
+}
+
+
+/* Contact */
+#contact {
+	padding: 80px 0;
+}
+
+.contact-row {
+	text-align: center;	
+	display: flex;
+	font-family: 'Roboto Mono'
+}
+.contact-row-icon {
+	width: 33%;
+	text-align: center;
+}
+
+.contact-row-icon img {
+	height: 60px;
+}
+
+/* Footer */
+#mainfooter {
+	background: #89a389;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px
+}
+.instagram{
+  padding-inline: 5px;
+  padding-block: 5px;
+  border: whitesmoke;
+  border-style: dotted;
+  color: white;
+  font-size: 1.1rem;
+  font-family: Arial;
+  text-align: center;
+  
+}
+.instagram:hover{
+  background-color: #BDECB6;
+  color: #2E5848;
+}
+.insta {height: 100%;
+width: 100%}
+
+.secreto {opacity: 0%}
+
+.secreto:hover {opacity: 100%;
+background-color: #BDECB6 }
+	
